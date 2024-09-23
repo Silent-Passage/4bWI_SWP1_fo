@@ -1,0 +1,13 @@
+/* Element Selector */
+div{
+    background-color:aquamarine;
+}
+
+/* ID Selector */
+#header{
+    font-size: 2rem;
+}
+
+.subitle{
+    color:red;
+}
