@@ -1,0 +1,12 @@
+*{
+    box-sizing: content-box;
+}
+div{
+    height: 100px;
+    width: 100px;
+    background-color: violet;
+    border-style: solid;
+}
+.second{
+    padding: 10px;
+}
