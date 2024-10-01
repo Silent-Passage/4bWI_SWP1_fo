@@ -1,0 +1,55 @@
+.container1{
+    background-color: yellow;
+    height: 120px;
+    border-bottom:solid;
+}
+.container2{
+    background-color:blue;
+    margin: 20px;
+    height: 300px;
+    width: 400px;
+    position:relative;
+    border:solid
+}
+.containter3{
+    background-color:violet;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    border:solid;
+}
+.Willkommen{
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: x-large;
+}
+.rowreversed{
+    display:flex;
+    flex-direction: row-reverse;
+}
+.box1{
+    background-color:greenyellow;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    position:relative;
+    top: 30px;
+    right: 30px;
+    border:solid;
+}
+.box2{
+    margin-left: 20px;
+    list-style-type: disc;
+}
+.box3{
+    height: 100px;
+    width:100px;
+    background-color: orange;
+    position: absolute;
+    bottom:0px;
+    right:0px;
+    border-left: solid;
+    border-top: solid;
+}
