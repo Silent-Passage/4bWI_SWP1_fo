@@ -1,0 +1,57 @@
+.container1{
+    position: relative;
+    margin: 40px;
+    height: 300px;
+    width: 400px;
+    border:solid;
+}
+.box1{
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+}
+.box2{
+    position: absolute;
+    background-color: cyan;
+    height: 200px;
+    width: 200px;
+    right: 0px;
+    top:0px;
+    border-left:solid;
+}
+.box3{
+    position:absolute;
+    background-color:orange;
+    height: 100px;
+    width: 400px;
+    border-bottom:solid;
+    border-top:solid;
+}
+.box4{
+    position:absolute;
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    top: 0px;
+    right: 0px;
+}
+.box5{
+    position: absolute;
+    background-color: gainsboro;
+    height: 250px;
+    width: 250px;
+    left:0px;
+    bottom:0px;
+    border-top:solid;
+    border-right: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box6{
+    background-color: orange;
+    height: 100px;
+    width: 100px;
+}
+    
+
