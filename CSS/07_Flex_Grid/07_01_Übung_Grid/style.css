@@ -1,0 +1,41 @@
+.container1{
+    border-left: solid;
+    border-top: solid;
+    border-bottom: solid;
+    height: auto;
+    width: 50%;
+    margin-left: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.container2{
+    display:flex;
+    justify-content:space-around;
+    border:solid;
+    padding: 50px;
+    height: auto;
+    width: 50%;
+    margin-right: 100px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display:grid;
+    grid-template-columns: auto auto;
+}
+.containerFlex{
+    display:flex;
+    height: 100%;
+}
+.box1{
+    background-color: greenyellow;
+    height: 100px;
+    width: 100px;
+    margin: 50px;
+}
+.box2{
+    background-color: greenyellow;
+    height: 200px;
+    width: 200px;
+    margin: 20px;
+}
