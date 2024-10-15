@@ -1,0 +1,38 @@
+.box{
+    background-color: violet;
+    /*margin: 5px;
+    height: 100px;
+    width: 100px;*/
+    padding:10px;
+}
+.container{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.item1{
+    grid-column-start: span 1;
+}
+.item2{
+    grid-column-start: span 1;
+}
+.item3{
+    grid-column-start: span 1;
+}
+.item4{
+    grid-column-start: span 1;
+}
+.item5{
+    grid-column-start: span 1;
+}
+@media (min-width: 600px){
+    .container{
+        display:grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-auto-rows: minmax(100px, auto);
+        column-gap: 5px;
+        row-gap: 5px;
+    }
+}
