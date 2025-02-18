@@ -1,0 +1,44 @@
+html{
+    background-color: red;
+}
+.container{
+    display:flex;
+    justify-content:space-evenly;
+    
+    
+}
+.text{
+    justify-content: center;
+    display:flex;
+}
+.inputs{
+    background-color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    border: black 2px solid;
+    height: 40px;
+    width: 500px;
+    outline: none;
+    font-size: xx-large;
+    align-items: middle;
+}
+.container2{
+    display: flex;
+    justify-content:center;
+    
+}
+#button{
+    display: flex;
+    justify-content:center;
+    margin-bottom: 20px;
+    
+}
+#output{
+    background-color: white;
+    border: black 2px solid;
+    height: 40px;
+    width: 500px;
+    display:flex;
+    justify-content:center;
+    font-size: xx-large;
+}
