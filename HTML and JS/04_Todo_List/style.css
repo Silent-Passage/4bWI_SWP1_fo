@@ -1,0 +1,21 @@
+#input {
+  margin-bottom: 5px;
+}
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 5px;
+  border: 2px solid black;
+  width: 300px;
+}
+.icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
