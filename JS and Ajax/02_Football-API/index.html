@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script src="script.js" defer></script>
-</head>
-<body>
-    <h1>Football</h1>
-    <div id="table"></div>
-</body>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-gray-500">
+    <div class="text-3xl border-2 m-5 p-5 bg-white text-center">
+      Football Season 2024/2025 Alle Bundesligen
+    </div>
+    <div class="flex">
+      <div id="table" class="w-2/4"></div>
+      <div class="text-3xl w-2/4 h-65 m-5 p-5 bg-white border-2">
+        <div id="Zeitpunkt">Match Zeitpunkt:</div>
+        <div id="Timezone">Timezone:</div>
+        <div id="nextMatch" class="mt-5"></div>
+      </div>
+    </div>
+  </body>
 </html>
