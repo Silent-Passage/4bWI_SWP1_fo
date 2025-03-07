@@ -2,10 +2,10 @@ import React, { useState, useEffect, useRef } from "react";
 const token = import.meta.env.VITE_GITHUB_TOKEN;
 
 function Dropdown({ setSelectedVersion }) {
-  const [versions, setVersions] = useState([]); // Store versions
-  const [isOpen, setIsOpen] = useState(false); // Manage dropdown state
+  const [versions, setVersions] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedVersion, setLocalSelectedVersion] = useState("Select Version");
-  const dropdownRef = useRef(null); // Ref for outside click detection
+  const dropdownRef = useRef(null);
 
   // Fetch versions from API
   useEffect(() => {
@@ -21,7 +21,7 @@ function Dropdown({ setSelectedVersion }) {
     )
       .then((response) => response.json())
       .then((data) => {
-        console.log("Raw API response:", data); // Debugging log
+        console.log("Raw API response:", data);
 
         if (!Array.isArray(data)) {
           console.error("Unexpected API response:", data);
@@ -30,7 +30,7 @@ function Dropdown({ setSelectedVersion }) {
 
         const versionsList = data
           .map((item) => item.name)
-          .filter((name) => name.match(/^\d+\.\d+\.\d+$/)) // Match full version numbers
+          .filter((name) => name.match(/^\d+\.\d+\.\d+$/))
           .sort((a, b) => {
             const aParts = a.split(".").map(Number);
             const bParts = b.split(".").map(Number);
@@ -38,18 +38,17 @@ function Dropdown({ setSelectedVersion }) {
             for (let i = 0; i < 3; i++) {
               const numA = aParts[i] || 0;
               const numB = bParts[i] || 0;
-              if (numA !== numB) return numB - numA; // Descending order
+              if (numA !== numB) return numB - numA;
             }
             return 0;
           });
 
-        console.log("Sorted versions:", versionsList); // Debugging log
+        console.log("Sorted versions:", versionsList);
         setVersions(versionsList);
       })
       .catch((error) => console.error("Error fetching versions:", error));
   }, []);
 
-  // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -70,6 +69,7 @@ function Dropdown({ setSelectedVersion }) {
     setIsOpen(false);
   };
 
+  // Tailwind copy paste
   return (
     <div className="relative inline-block text-left" ref={dropdownRef}>
       {/* Toggle Dropdown Button */}

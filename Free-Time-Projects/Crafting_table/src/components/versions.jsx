@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 
 function Versions({ setSelectedVersion }) {
-  const [versions, setVersions] = useState([]); // Fix: useState([]) instead of string
+  const [versions, setVersions] = useState([]);
 
   useEffect(() => {
     fetch(
@@ -11,15 +11,15 @@ function Versions({ setSelectedVersion }) {
       .then((data) => {
         const versionsList = data
           .map((item) => item.name)
-          .filter((name) => name.match(/^\d+\.\d+\.\d+$/)) // Ensuring only full versions like 1.21.4
+          .filter((name) => name.match(/^\d+\.\d+\.\d+$/))
           .sort((a, b) => {
             const aParts = a.split(".").map(Number);
             const bParts = b.split(".").map(Number);
 
             for (let i = 0; i < 3; i++) {
-              const numA = aParts[i] || 0; // Default to 0 if missing
+              const numA = aParts[i] || 0;
               const numB = bParts[i] || 0;
-              if (numA !== numB) return numB - numA; // Descending order (latest first)
+              if (numA !== numB) return numB - numA;
             }
             return 0;
           });
