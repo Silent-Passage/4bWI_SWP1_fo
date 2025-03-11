@@ -1,0 +1,6 @@
+#Vite
+npm create vite@latest
+
+#Tailwind
+npm install tailwindcss @tailwindcss/vite
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
