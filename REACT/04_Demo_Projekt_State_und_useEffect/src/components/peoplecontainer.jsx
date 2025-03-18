@@ -17,6 +17,13 @@ export default function PeopleContainer() {
   return (
     <div>
       <h1>People</h1>
+      <button
+        onClick={() => {
+          setColor("orange");
+        }}
+      >
+        Change Color
+      </button>
       <div className="grid grid-cols-2 gap-4 w-full lg:grid-cols-4">
         {people.map((person) => {
           return (
