@@ -3,4 +3,6 @@ npm create vite@latest
 
 #Tailwind
 npm install tailwindcss @tailwindcss/vite
+npm i react-router
+
 npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
