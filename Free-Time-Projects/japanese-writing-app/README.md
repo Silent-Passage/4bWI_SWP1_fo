@@ -2,7 +2,7 @@
 
 This README contains quick steps to run the project locally and fix the Firebase "unauthorized-domain" issue you might encounter when signing in.
 
-1) Start the dev server
+1. Start the dev server
 
 ```powershell
 cd "d:\Schule\4bWI\SWP1_fo\Free-Time-Projects\japanese-writing-app"
@@ -12,7 +12,7 @@ npm run dev
 
 Open the Local URL reported by Next (typically `http://localhost:3000`). If you open the app from another machine or via the network IP, Next will also print a Network URL (for example `http://172.16.0.2:3000`).
 
-2) Fix Firebase "auth/unauthorized-domain"
+2. Fix Firebase "auth/unauthorized-domain"
 
 When a sign-in popup fails with:
 
@@ -31,7 +31,7 @@ Do this in the Firebase Console:
 
 After adding the domain, retry sign-in in your app.
 
-3) Optional: Environment variables for Firebase config
+3. Optional: Environment variables for Firebase config
 
 The app falls back to embedded config values but prefers environment variables named:
 
@@ -45,7 +45,7 @@ The app falls back to embedded config values but prefers environment variables n
 
 Create a `.env.local` in the project root to override defaults when needed.
 
-4) Notes
+4. Notes
 
 - `next.config.js` includes `allowedDevOrigins` for `http://172.16.0.2:3000` to avoid a cross-origin dev warning when using the network URL. If your network IP changes, update that array or use `localhost` when possible.
 
